@@ -1,0 +1,62 @@
+# conky configrued by Qaisar Nawaz
+# for more like visit : myconkys.blogspot.com
+# Conky settings #
+background no
+update_interval 1
+double_buffer yes
+no_buffers yes
+
+# Window specifications #
+own_window yes
+own_window_type normal
+own_window_hints undecorated,below,sticky,skip_taskbar,skip_pager
+own_window_title 
+own_window_colour FFFFFF
+own_window_transparent yes
+own_window_argb_visual no
+#own_window_argb_value 255
+
+minimum_size 200 100
+# Alignment #
+alignment top_right
+gap_x 45
+gap_y 190
+
+border_inner_margin 0
+border_outer_margin 0
+
+# Graphics settings #
+draw_shades no
+draw_outline no
+draw_borders no
+draw_graph_borders no
+
+# Text settings #
+use_xft yes
+xftalpha 0
+xftfont Zekton Bold:size=11
+
+
+# Color scheme #
+default_color ff3b00
+color1 fa4f6a
+color2 1bf603
+
+own_window_argb_value 0
+TEXT
+${voffset 10}${offset 10}${color2}CPU STATUS ${color}
+
+${offset 10} CPU ${offset 10}${color2}${cpu cpu0}% ${alignr 10}${color}
+
+${voffset -4}${offset 10} RAM ${color2}${mem} ${alignr 10}${color}
+================
+
+${voffset -4}${offset 10} Uptime ${color2}${uptime} ${alignr 10}${color}
+
+${voffset -4}${offset 10} Battery Status ${color2} ${battery_percent BAT1}% ${alignr 10}${color}
+================
+${voffset -4}${offset 10} User ${color2} ${nodename} ${alignr 10}${color}
+
+${voffset -4}${offset 10} System ${color2} ${machine} ${alignr 10}${color}
+
+
